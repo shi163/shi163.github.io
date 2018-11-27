@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://shi163.github.io/uncategorized/First/</loc>
+    
+    <lastmod>2018-11-27T02:57:25.996Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shi163.github.io/404.html</loc>
     
     <lastmod>2018-11-26T04:57:33.052Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://shi163.github.io/categories/index.html</loc>
     
     <lastmod>2018-11-26T04:55:25.137Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shi163.github.io/uncategorized/hello-world/</loc>
-    
-    <lastmod>2018-11-26T04:04:59.155Z</lastmod>
     
   </url>
   
