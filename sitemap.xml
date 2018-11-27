@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://shi163.github.io/hello/First/</loc>
+    <loc>https://shi163.github.io/Machine-Learning/First/</loc>
     
-    <lastmod>2018-11-27T12:18:54.000Z</lastmod>
+    <lastmod>2018-11-27T12:30:08.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shi163.github.io/tags/index.html</loc>
+    
+    <lastmod>2018-11-27T12:04:49.252Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shi163.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-11-27T12:04:36.635Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://shi163.github.io/about/index.html</loc>
+    
+    <lastmod>2018-11-27T12:04:22.275Z</lastmod>
     
   </url>
   
@@ -12,27 +33,6 @@
     <loc>https://shi163.github.io/404.html</loc>
     
     <lastmod>2018-11-26T04:57:33.052Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shi163.github.io/tags/index.html</loc>
-    
-    <lastmod>2018-11-26T04:55:57.105Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shi163.github.io/about/index.html</loc>
-    
-    <lastmod>2018-11-26T04:55:47.451Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://shi163.github.io/categories/index.html</loc>
-    
-    <lastmod>2018-11-26T04:55:25.137Z</lastmod>
     
   </url>
   
