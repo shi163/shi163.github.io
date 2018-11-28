@@ -11,4 +11,15 @@
         <tag>R</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[线性回归]]></title>
+    <url>%2FMachine-Learning%2Fliner-regression%2F</url>
+    <content type="text"><![CDATA[线性回归 因变量Y是连续变量，否则考虑广义线性模型;每行数据之间相互独立，否则考虑时间序列，重复测量，纵向数据;残差分布独立于自变量X用于模型诊断和改进;因变量Y和自变量X之间是线性关系可用样条函数描述。 代码12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667## 1. linear regression# 1.1 one independent variablemodel1 &lt;- lm(TestC ~ Age)# if data.wide not attached# model1 &lt;- lm(TestC ~ Age, data=data.wide)model1# 1.2 multiple independent variablesmodel2 &lt;- lm(TestC ~ Age + TestA + TestB)model2# 1.3 categorical independent variable (into dummy variable)model3 &lt;- lm(TestC ~ Age + relevel(Sex,"Male")) # male as reference groupmodel3model3.1 &lt;- lm(TestC ~ Age + relevel(Sex,"Female")) # female as reference groupmodel3.1# 1.4 interaction termmodel4 &lt;- lm(TestC ~ Age*relevel(Sex,"Male")) # "*" both interaction and main effectmodel4model4.1 &lt;- lm(TestC ~ Age + Age:relevel(Sex,"Male")) # ":" only interaction y ~ x*z == y ~ x + z + x:zmodel4.1# 2.Model summary# 2.1 model fitsummary(model4) # F test p value, R^2, adj R^2AIC(model4) # the lower the betterBIC(model4) # the lower the better# 2.2 coefficientssummary(model4)$coefficients # coefficients, standard error, p-valueconfint(model4, level=0.95) # 95% confidence intervalcoef(model4) # extract coefficientscoef(model4)[2]# 3. Prediction# predict within datapredict(model4)# generate new patient datanew.patient &lt;- data.frame(Age=c(30, 35, 40),Sex=c(0,1,1))new.patient$Sex &lt;- factor(new.patient$Sex, levels=c(0,1), labels=c("Male", "Female"))new.patient# predict in new patient datanew.patient$TestC_hat &lt;- predict(model4,newdata = new.patient)new.patient]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>R</tag>
+      </tags>
+  </entry>
 </search>
