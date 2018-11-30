@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://shi163.github.io/Machine-Learning/timeseries/</loc>
+    
+    <lastmod>2018-11-30T04:13:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shi163.github.io/Machine-Learning/K-means-cluster/</loc>
     
-    <lastmod>2018-11-28T14:47:05.000Z</lastmod>
+    <lastmod>2018-11-29T14:20:24.000Z</lastmod>
     
   </url>
   
