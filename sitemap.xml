@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://shi163.github.io/code-snippet/sleep-sort/</loc>
+    
+    <lastmod>2018-12-02T14:00:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://shi163.github.io/Machine-Learning/timeseries/</loc>
     
     <lastmod>2018-11-30T04:13:27.000Z</lastmod>

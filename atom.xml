@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shi163.github.io/"/>
-  <updated>2018-11-30T04:13:27.000Z</updated>
+  <updated>2018-12-02T14:00:48.000Z</updated>
   <id>https://shi163.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sleep_sort</title>
+    <link href="https://shi163.github.io/code-snippet/sleep-sort/"/>
+    <id>https://shi163.github.io/code-snippet/sleep-sort/</id>
+    <published>2018-12-02T14:00:44.000Z</published>
+    <updated>2018-12-02T14:00:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Sleep-sort"><a href="#Sleep-sort" class="headerlink" title=" Sleep_sort "></a><font color="#A52A2A" size="5" face="微软雅黑"> Sleep_sort </font></h1><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a><font color="#A52A2A" size="3" face="微软雅黑">代码</font></h2><font color="#A52A2A" size="2" face="微软雅黑">很好的排序方法</font><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">numbers = [<span class="number">8</span>,<span class="number">42</span>,<span class="number">13</span>,<span class="number">11</span>,<span class="number">111</span>,<span class="number">2</span>,<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">numbers.forEach(<span class="function"><span class="params">num</span> =&gt;</span> &#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123; <span class="built_in">console</span>.log(num) &#125;, num);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p><img src="http://pis9aieqm.bkt.clouddn.com/sleep_sort.png" alt="R"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Sleep-sort&quot;&gt;&lt;a href=&quot;#Sleep-sort&quot; class=&quot;headerlink&quot; title=&quot; Sleep_sort &quot;&gt;&lt;/a&gt;&lt;font color=&quot;#A52A2A&quot; size=&quot;5&quot; face=&quot;微软雅黑&quot;&gt; Sleep_sort
+      
+    
+    </summary>
+    
+      <category term="code snippet" scheme="https://shi163.github.io/categories/code-snippet/"/>
+    
+    
+      <category term="js" scheme="https://shi163.github.io/tags/js/"/>
+    
+  </entry>
   
   <entry>
     <title>HoltWinners时序分析</title>

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Sleep_sort]]></title>
+    <url>%2Fcode-snippet%2Fsleep-sort%2F</url>
+    <content type="text"><![CDATA[Sleep_sort 代码很好的排序方法 123456numbers = [8,42,13,11,111,2,1];numbers.forEach(num =&gt; &#123; setTimeout(() =&gt; &#123; console.log(num) &#125;, num);&#125;);]]></content>
+      <categories>
+        <category>code snippet</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[HoltWinners时序分析]]></title>
     <url>%2FMachine-Learning%2Ftimeseries%2F</url>
     <content type="text"><![CDATA[HoltWinners时序分析 代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687# 时间列# tcol: time column, ascendingly sorted, equispaced## 数据列# dcol: a numeric vector, time series value at each time stamp## 趋势(beta)# beta: boolean flag, add trend effect or not## 季节因子(gamma)# gamma: boolean flag, add seasonal effect or not## 季节效应：加法效应,乘法效应# seasonal: string, choose what type of seasonal effect, "additive" or "multiplicative"## 预测周期(几年)# pperiod: period to do prediction## 置信区间# getPI: boolean flag, add prediction interval or not## level: 置信水平## 时间单位:(时间单位)# timeUnit: time unit# # alphaValue: alpha value# alphaValue = 0.3D;## betaValue: beta value# betaValue = 0.1D;## gammaValue: gamma value# gammaValue = 0.1D;#construct R time series objectlen &lt;- length(tcol)if(len &lt; 2) &#123; nas &lt;- c(NA) length(nas) &lt;- len result &lt;- list(his = nas, fitted = nas, lower = nas, upper=nas)&#125;else &#123; start &lt;- tcol[1] gap &lt;- tcol[2] - tcol[1] frequency &lt;- timeUnit / gap # 此处需要前期处理 timeType·gap 和timeUnit ; tsObject &lt;- ts(dcol, start=start, frequency=frequency) params &lt;- c(alpha = alphaValue, beta = betaValue, gamma = gammaValue) #build HoltWinters time series model if(beta &amp;&amp; gamma)&#123; hwModel &lt;- HoltWinters(tsObject, seasonal=seasonal, optim.start=params) &#125;else if(!beta &amp;&amp; gamma)&#123; hwModel &lt;- HoltWinters(tsObject, beta=FALSE, seasonal=seasonal, optim.start=params) &#125;else if(beta &amp;&amp; !gamma)&#123; hwModel &lt;- HoltWinters(tsObject, gamma=FALSE, optim.start=params) &#125;else&#123; hwModel &lt;- HoltWinters(tsObject, beta=FALSE, gamma=FALSE, optim.start=params) &#125; lev = 0.95 if(getPI) &#123; lev = level &#125; #use model to do prediction pred &lt;- predict(hwModel, pperiod, prediction.interval=getPI, level=lev) hisFit &lt;- hwModel$fitted[,1] fitLen &lt;- length(hisFit) nas &lt;- c(NA) length(nas) &lt;- len - fitLen hisFit &lt;- c(nas, hisFit) #put all required vectors in a list if(getPI)&#123; result &lt;- list(hisFit=hisFit,fitted=pred[,1],lower=pred[,3],upper=pred[,2]) &#125;else&#123; result &lt;- list(hisFit=hisFit,fitted=pred[,1]) &#125;&#125;result]]></content>
